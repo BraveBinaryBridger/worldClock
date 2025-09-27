@@ -1,4 +1,59 @@
 body{
-    background-color: beige;
+    background-color: rgb(175, 174, 174);
+    font-family: sans-serif;
+    
+}
+.container{
+    max-width: 600px;
+    margin: 60px auto;
+    background-color:azure;
+    padding: 30px;
+    box-shadow: 0px 7px 20px 10px rgb(94, 92, 92);
+    border-radius: 4px;
+}
+
+h1{
     text-align: center;
+}
+
+select{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.city{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-bottom: 1px dashed grey;
+}
+
+.city:last-child{
+    border: none;
+}
+
+h2{
+    margin: 0 auto;
+}
+.date{
+    opacity: 0.6;
+    margin: 5px 0;
+}
+
+.time{
+    font-size: 34px;
+    font-weight: bold;
+}
+.time small{
+    font-size: 12px;
+    vertical-align: middle;
+
+}
+
+footer{
+    text-align: center;
+    opacity: 0.6;
 }
