@@ -32,17 +32,20 @@ berlinTime.innerHTML = berlinToday.format("hh:mm:ss  [<small>]A[</small>]");
 
 function updateSelectcity(event){
     let selectcityZone = event.target.value;
+    if (selectcityZone === "current"){
+        selectcityZone =moment.tz.guess();
+    }
     let selectcityName = selectcityZone.split("/")[1] ;
     let selectcityTime = moment().tz(selectcityZone);
     let citiesElement = document.querySelector("#cities");
     citiesElement.innerHTML = `
     <div class="city">
-                <div>
-                    <h2>${selectcityName}</h2>
-                    <div class="date">${selectcityTime.format("MMMM Do YYYY")}</div>
-                </div>
-                <div class="time">${selectcityTime.format("hh:mm:ss  [<small>]A[</small>]")}</div>
-            </div>`;
+        <div>
+            <h2>${selectcityName}</h2>
+                <div class="date">${selectcityTime.format("MMMM Do YYYY")}</div>
+        </div>
+        <div class="time">${selectcityTime.format("hh:mm:ss  [<small>]A[</small>]")}</div>
+    </div>`;
 }
 
 updateforSecond();
