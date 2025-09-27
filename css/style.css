@@ -15,6 +15,10 @@ body{
 h1{
     text-align: center;
 }
+h1 a{
+    text-decoration: none;
+    color: black;
+}
 
 select{
     display: block;
@@ -38,6 +42,7 @@ select{
 h2{
     margin: 0 auto;
 }
+
 .date{
     opacity: 0.6;
     margin: 5px 0;

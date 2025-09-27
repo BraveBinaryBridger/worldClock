@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    
     <title>World clock</title>
 </head>
 <body>
     <div class="container">
-        <h1>World clock</h1>
+        <h1><a href="/">World clock</a></h1>
 
         <select name="" id="">
             <option value="">Select</option>
@@ -18,21 +21,28 @@
 
         </select>
     
-        <div class="city">
+        <div class="city" id="sydney">
             <div>
                 <h2>Sydney</h2>
-                <div class="date">September 27th 2025</div>
+                <div class="date"></div>
             </div>
-            <div class="time">12:12:12 <small>PM</small></div>
+            <div class="time"></div>
         </div>
-        <div class="city">
+        <div class="city" id="istanbul">
             <div>
                 <h2>Istanbul</h2>
-                <div class="date">September 27th 2025</div>
+                <div class="date"></div>
             </div>
-            <div class="time">12:12:12 <small>PM</small></div>
+            <div class="time"></div>
         </div>
-
+        <div class="city" id="berlin">
+            <div>
+                <h2>Berlin</h2>
+                <div class="date"></div>
+            </div>
+            <div class="time"></div>
+        </div>
+        <a href="/">Back</a>
     </div>
 
     <footer>
